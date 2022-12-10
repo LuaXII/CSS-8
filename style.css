@@ -1,0 +1,107 @@
+img {
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+.vertical {
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    /*
+    transform: rotate(89.9deg);
+    transform-origin: 0 0;
+    margin-left: 20px;
+    */
+}
+
+p {
+    margin-block-start: 0em;
+}
+
+h3 {
+    margin-block-end: 0em;
+    text-transform: uppercase;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+h1 {
+    margin-block-end: 1.5em;
+}
+
+.header {
+    margin-block-end: 6em;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+body {
+    margin-left: 5%;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    max-width: 320px;
+    margin-left: 5em;
+}
+
+.child {
+    display: flex;
+    flex-direction: column;
+}
+
+.parent-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.child-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.parent:nth-child(even) {
+    padding-top: 40px;
+}
+
+@media only screen and (min-width: 636px) {
+    .child-header {
+        width: 290px;
+        font-size: small;
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (min-width: 862px) {
+    .child-header {
+        width: 320px;
+        font-size: medium;
+        padding-left: 50px;
+    }  
+}
+
+@media only screen and (min-width: 950px) {
+    .child-header {
+        width: 450px;
+        font-size: large;
+        padding-left: 80px;
+    }  
+
+}
+
+@media only screen and (min-width: 1264px) {
+    .header {
+        min-width: 600px;
+    }
+
+    .child-header {
+        padding-left: 10%;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
